@@ -24,6 +24,7 @@ export const partsReducer = createReducer(
     on(Actions.loadPartsSuccess, (state, {parts}) => 
         adapter.setAll(parts, state)
     ),
+);
 //  on(Actions.ratePart, (state, { partId, rating }) =>
 //  adapter.updateOne(
 //       {
@@ -35,4 +36,3 @@ export const partsReducer = createReducer(
 //       state
 //     )
 //   )
-)

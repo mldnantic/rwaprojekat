@@ -7,10 +7,11 @@ import { Part } from '../models/part';
 })
 export class PartsService {
 
+  API_URL: string = "http://localhost:3000";
   constructor(private httpClient: HttpClient) { }
 
   getAll() {
-    return this.httpClient.get<Part[]>("localhost:3000" + "/parts");
+    return this.httpClient.get<Part[]>(this.API_URL + "/parts");
   }
 
 }

@@ -1,18 +1,23 @@
-import { Injectable } from "@angular/core";
+import { inject, Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { PartsService } from "../services/parts.service";
-import * as PartActions from "./part.action";
+import { loadParts, loadPartsSuccess } from "./part.action";
 import { catchError, map, mergeMap, of } from "rxjs";
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class PartsEffects {
-    constructor(private action$: Actions, private partsService: PartsService) { }
-    loadSongs$ = createEffect(() =>
+    
+    private action$ = inject(Actions);
+    private partsService = inject(PartsService);
+    
+    loadParts$ = createEffect(() =>
         this.action$.pipe(
-            ofType(PartActions.loadParts),
+            ofType(loadParts),
             mergeMap(() =>
                 this.partsService.getAll().pipe(
-                    map((parts) => PartActions.loadPartsSuccess({ parts })),
+                    map((parts) => loadPartsSuccess({ parts })),
                     catchError(() => of({ type: 'load error' }))
                 )
             )
