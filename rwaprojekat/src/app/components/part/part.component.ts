@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Part } from '../../models/part';
 
 @Component({
   selector: 'part',
@@ -6,6 +7,18 @@ import { Component } from '@angular/core';
   templateUrl: './part.component.html',
   styleUrl: './part.component.scss',
 })
-export class PartComponent {
+export class PartComponent implements OnInit {
+  @Input() part: Part | null = null;
+  @Output() onClick: EventEmitter<Part> = new EventEmitter<Part>();
 
+  constructor() { }
+
+  ngOnInit(): void { }
+
+  clicked()
+  {
+    if(this.part){
+      this.onClick.emit(this.part);
+    }
+  }
 }

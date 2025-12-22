@@ -1,1 +1,7 @@
-<p>list.component works!</p>
+@if(part$ | async; as parts)
+{
+    @for(p of parts; track p)
+    {
+        <part [part] = p></part>
+    }
+}
