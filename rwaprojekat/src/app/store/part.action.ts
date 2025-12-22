@@ -13,7 +13,9 @@ export const selectPart = createAction(
     props<{ partId: number }>()
 );
 
-// export const ratePart = createAction(
-//   'Rate a part',
-//   props<{ partId: number; rating: PartRating }>()
-// );
+export const viewPart = createAction(
+    'View part',
+    props<{ partId: number,
+        viewCount: number
+    }>()
+);
