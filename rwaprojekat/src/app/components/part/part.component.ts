@@ -22,8 +22,7 @@ export class PartComponent implements OnInit {
     if (this.part) {
       this.store.dispatch(
         viewPart({
-          partId: this.part.id,
-          viewCount: this.part.viewCount + 1
+          part: this.part
         })
       );
     }

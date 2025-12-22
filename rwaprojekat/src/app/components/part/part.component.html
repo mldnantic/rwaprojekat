@@ -1,8 +1,9 @@
 @if(part)
 {
-    <div class="part" (click)="clicked()">
+    <div class="part">
         <img src="{{part.image}}" class="part-image"/>
         <h2>{{part.name}} {{part.msrp}}$</h2>
+        <button (click)="clicked()">View part</button>
         <p>view count: {{part.viewCount}}</p>
     </div>
 }

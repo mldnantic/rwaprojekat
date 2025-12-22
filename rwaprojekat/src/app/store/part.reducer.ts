@@ -24,12 +24,12 @@ export const partsReducer = createReducer(
     on(Actions.loadPartsSuccess, (state, {parts}) => 
         adapter.setAll(parts, state)
     ),
-    on(Actions.viewPart, (state, { partId, viewCount }) =>
+    on(Actions.viewPart, (state, { part }) =>
     adapter.updateOne(
         {
-        id: partId,
+        id: part.id,
         changes: {
-            viewCount
+            viewCount: part.viewCount + 1
         },
         },
         state

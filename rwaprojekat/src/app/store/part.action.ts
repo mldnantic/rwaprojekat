@@ -15,7 +15,14 @@ export const selectPart = createAction(
 
 export const viewPart = createAction(
     'View part',
-    props<{ partId: number,
-        viewCount: number
+    props<{ 
+        part: Part
+    }>()
+);
+
+export const viewPartSuccess = createAction(
+    'View part Success',
+    props<{
+        part: Part
     }>()
 );
