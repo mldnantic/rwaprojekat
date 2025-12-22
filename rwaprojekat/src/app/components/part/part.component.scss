@@ -6,9 +6,18 @@
     font-weight: 500;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
     &:hover {
         background-color: #8aa394;
         transform: translateY(-2px);
         cursor: pointer;
     }
+}
+
+.part-image{
+    width: 64px;
+    object-fit: contain;
 }

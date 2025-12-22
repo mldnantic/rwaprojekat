@@ -1,6 +1,8 @@
 export interface Part {
     id: number,
     name: string,
+    category: string,
     msrp: number,
-    type: string
+    viewCount: number,
+    image: string
 }

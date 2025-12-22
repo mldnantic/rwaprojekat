@@ -1,124 +1,140 @@
 {
-    "parts" : [
+  "parts": [
     {
-        "id": 1,
-        "name": "Intel Core i9-14900K",
-        "msrp": 589,
-        "type": "CPU"
+      "id": 1,
+      "name": "Intel Core i9-14900K",
+      "category": "CPU",
+      "msrp": 589,
+      "viewCount": 0,
+      "image": "images/intel.png"
     },
     {
-        "id": 2,
-        "name": "AMD Ryzen 9 7950X",
-        "msrp": 699,
-        "type": "CPU"
+      "id": 2,
+      "name": "AMD Ryzen 9 7950X",
+      "category": "CPU",
+      "msrp": 699,
+      "viewCount": 0,
+      "image": "images/amd.png"
     },
     {
-        "id": 3,
-        "name": "Apple M2 Ultra",
-        "msrp": 1999,
-        "type": "CPU"
+      "id": 4,
+      "name": "Intel Xeon Platinum 8490H",
+      "category": "CPU",
+      "msrp": 17000,
+      "viewCount": 0,
+      "image": "images/intel.png"
     },
     {
-        "id": 4,
-        "name": "Intel Xeon Platinum 8490H",
-        "msrp": 17000,
-        "type": "CPU"
+      "id": 5,
+      "name": "AMD EPYC 9654",
+      "category": "CPU",
+      "msrp": 11500,
+      "viewCount": 0,
+      "image": "images/amd.png"
     },
     {
-        "id": 5,
-        "name": "AMD EPYC 9654",
-        "msrp": 11500,
-        "type": "CPU"
+      "id": 6,
+      "name": "Intel Core i7-13700K",
+      "category": "CPU",
+      "msrp": 409,
+      "viewCount": 0,
+      "image": "images/intel.png"
     },
     {
-        "id": 6,
-        "name": "Intel Core i7-13700K",
-        "msrp": 409,
-        "type": "CPU"
+      "id": 7,
+      "name": "AMD Ryzen 7 7800X3D",
+      "category": "CPU",
+      "msrp": 449,
+      "viewCount": 0,
+      "image": "images/amd.png"
     },
     {
-        "id": 7,
-        "name": "AMD Ryzen 7 7800X3D",
-        "msrp": 449,
-        "type": "CPU"
+      "id": 9,
+      "name": "Intel Core i5-13600K",
+      "category": "CPU",
+      "msrp": 319,
+      "viewCount": 0,
+      "image": "images/intel.png"
     },
     {
-        "id": 8,
-        "name": "Qualcomm Snapdragon X Elite",
-        "msrp": 899,
-        "type": "CPU"
+      "id": 10,
+      "name": "AMD Ryzen 5 7600",
+      "category": "CPU",
+      "msrp": 229,
+      "viewCount": 0,
+      "image": "images/amd.png"
     },
     {
-        "id": 9,
-        "name": "Intel Core i5-13600K",
-        "msrp": 319,
-        "type": "CPU"
+      "id": 11,
+      "name": "NVIDIA GeForce RTX 4090",
+      "category": "GPU",
+      "msrp": 1599,
+      "viewCount": 0,
+      "image": "images/nvidia.png"
     },
     {
-        "id": 10,
-        "name": "AMD Ryzen 5 7600",
-        "msrp": 229,
-        "type": "CPU"
+      "id": 12,
+      "name": "AMD Radeon RX 7900 XTX",
+      "category": "GPU",
+      "msrp": 999,
+      "viewCount": 0,
+      "image": "images/amd.png"
     },
     {
-        "id": 11,
-        "name": "NVIDIA GeForce RTX 4090",
-        "msrp": 1599,
-        "type": "GPU"
+      "id": 13,
+      "name": "Intel Arc A770",
+      "category": "GPU",
+      "msrp": 349,
+      "viewCount": 0,
+      "image": "images/intel.png"
     },
     {
-        "id": 12,
-        "name": "AMD Radeon RX 7900 XTX",
-        "msrp": 999,
-        "type": "GPU"
+      "id": 14,
+      "name": "NVIDIA H100 Tensor Core",
+      "category": "GPU",
+      "msrp": 30000,
+      "viewCount": 0,
+      "image": "images/nvidia.png"
     },
     {
-        "id": 13,
-        "name": "Intel Arc A770",
-        "msrp": 349,
-        "type": "GPU"
+      "id": 16,
+      "name": "NVIDIA GeForce RTX 4080",
+      "category": "GPU",
+      "msrp": 1199,
+      "viewCount": 0,
+      "image": "images/nvidia.png"
     },
     {
-        "id": 14,
-        "name": "NVIDIA H100 Tensor Core",
-        "msrp": 30000,
-        "type": "GPU"
+      "id": 17,
+      "name": "AMD Radeon RX 7800 XT",
+      "category": "GPU",
+      "msrp": 499,
+      "viewCount": 0,
+      "image": "images/amd.png"
     },
     {
-        "id": 15,
-        "name": "Apple M2 Ultra GPU",
-        "msrp": 1999,
-        "type": "GPU"
+      "id": 18,
+      "name": "NVIDIA A100",
+      "category": "GPU",
+      "msrp": 25000,
+      "viewCount": 0,
+      "image": "images/nvidia.png"
     },
     {
-        "id": 16,
-        "name": "NVIDIA GeForce RTX 4080",
-        "msrp": 1199,
-        "type": "GPU"
+      "id": 19,
+      "name": "Intel Arc A750",
+      "category": "GPU",
+      "msrp": 289,
+      "viewCount": 0,
+      "image": "images/intel.png"
     },
     {
-        "id": 17,
-        "name": "AMD Radeon RX 7800 XT",
-        "msrp": 499,
-        "type": "GPU"
-    },
-    {
-        "id": 18,
-        "name": "NVIDIA A100",
-        "msrp": 25000,
-        "type": "GPU"
-    },
-    {
-        "id": 19,
-        "name": "Intel Arc A750",
-        "msrp": 289,
-        "type": "GPU"
-    },
-    {
-        "id": 20,
-        "name": "NVIDIA GeForce RTX 4070 Ti",
-        "msrp": 799,
-        "type": "GPU"
+      "id": 20,
+      "name": "NVIDIA GeForce RTX 4070 Ti",
+      "category": "GPU",
+      "msrp": 799,
+      "viewCount": 0,
+      "image": "images/nvidia.png"
     }
-    ]
+  ]
 }
