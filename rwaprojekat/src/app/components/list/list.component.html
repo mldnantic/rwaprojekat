@@ -1,7 +1,7 @@
 @if(part$ | async; as parts)
 {
     <div class="list">
-    @for(p of parts; track p)
+    @for(p of parts; track p.id)
     {
         <part [part] = p></part>
     }
