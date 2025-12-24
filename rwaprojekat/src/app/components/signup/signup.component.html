@@ -1,24 +1,18 @@
 <div>
-    <h1>Sign up/Log in</h1>
-    <mat-form-field>
-        <mat-label>Email</mat-label>
-        <input matInput>
-    </mat-form-field>
-    <mat-form-field>
-            <mat-label>Password</mat-label>
+  <h1>Sign up/Log in</h1>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Password</mat-label>
     <input matInput [type]="hide() ? 'password' : 'text'" />
-    <button
-      matIconButton
-      matSuffix
-      (click)="clickEvent($event)"
-      [attr.aria-label]="'Hide password'"
-      [attr.aria-pressed]="hide()"
-    >
+    <button matIconButton matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide()">
       <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
-    </mat-form-field>
-</div>
-<div>
-    <button matButton="elevated">Sign up</button>
-    <button matButton="elevated">Log in</button>
+  </mat-form-field>
+  <button matButton="elevated">Sign up</button>
+  <button matButton="elevated">Log in</button>
 </div>
