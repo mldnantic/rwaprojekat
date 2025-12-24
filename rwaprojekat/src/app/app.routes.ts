@@ -7,7 +7,8 @@ import { NotFoundComponent } from './components/notfound/notfound.component';
 export const routes: Routes = [
     {
         path:'',
-        component: ListComponent
+        loadComponent: () => 
+            import('./components/list/list.component').then((c)=> c.ListComponent),
     },
     {
         path:'signup',
