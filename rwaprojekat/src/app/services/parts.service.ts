@@ -2,22 +2,22 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Part } from '../models/part';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PartsService {
 
-  API_URL: string = "http://localhost:3000";
   constructor(private httpClient: HttpClient) { }
 
   getAll() {
-    return this.httpClient.get<Part[]>(this.API_URL + "/parts");
+    return this.httpClient.get<Part[]>(environment.APIURL + "/parts");
   }
 
   viewPart(part: Part): Observable<Part>
   {
-    return this.httpClient.put<Part>(this.API_URL + "/parts/" + part.id, part);
+    return this.httpClient.put<Part>(environment.APIURL + "/parts/" + part.id, part);
   }
 
 }

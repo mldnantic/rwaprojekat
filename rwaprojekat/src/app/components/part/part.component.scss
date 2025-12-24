@@ -1,20 +1,12 @@
 .part{
     padding: 1rem 1.5rem;
     border-radius: 10px;
-    background-color: #9fb8a8;
-    color: #ffffff;
     font-weight: 500;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
     display: flex;
     align-items: center;
     gap: 10px;
-    
-    &:hover {
-        background-color: #8aa394;
-        transform: translateY(-2px);
-        cursor: pointer;
-    }
 }
 
 .part-image{

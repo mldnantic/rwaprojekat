@@ -4,7 +4,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 
-
 @Component({
   selector: 'app-signup.component',
   imports: [MatButtonModule, MatFormFieldModule, MatInputModule, MatIconModule],
