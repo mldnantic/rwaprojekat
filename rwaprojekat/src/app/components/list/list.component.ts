@@ -8,10 +8,11 @@ import { AppState } from '../../app.state';
 import { PartComponent } from "../part/part.component";
 import { loadParts } from '../../store/part.action';
 import { selectPartList } from '../../store/part.selector';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @Component({
   selector: 'list',
-  imports: [AsyncPipe, PartComponent],
+  imports: [AsyncPipe, PartComponent, MatGridListModule],
   providers:[PartsService, Store],
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss',
