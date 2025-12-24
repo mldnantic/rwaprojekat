@@ -1,9 +1,17 @@
 @if(part)
 {
-    <div class="part">
-        <img src="{{part.image}}" class="part-image"/>
-        <h2>{{part.name}} {{part.msrp}}$</h2>
-        <button (click)="clicked()">View part</button>
-        <p>view count: {{part.viewCount}}</p>
-    </div>
+<mat-card appearance="outlined">
+    <mat-card-header>
+        <mat-card-title>{{part.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{part.image}}">
+    <mat-card-content>
+        <p>
+            {{part.category}} {{part.msrp}}$ view count: {{part.viewCount}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button matButton (click)="clicked()">View part</button>
+    </mat-card-actions>
+</mat-card>
 }

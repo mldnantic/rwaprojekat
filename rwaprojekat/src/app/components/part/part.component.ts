@@ -3,10 +3,12 @@ import { Part } from '../../models/part';
 import { viewPart } from '../../store/part.action';
 import { AppState } from '../../app.state';
 import { Store } from '@ngrx/store';
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'part',
-  imports: [],
+  imports: [MatCardModule, MatButtonModule],
   templateUrl: './part.component.html',
   styleUrl: './part.component.scss',
 })

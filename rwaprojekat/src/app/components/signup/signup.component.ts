@@ -3,10 +3,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-signup.component',
-  imports: [MatButtonModule, MatFormFieldModule, MatInputModule, MatIconModule],
+  imports: [MatButtonModule, MatFormFieldModule, MatInputModule, MatIconModule, MatCardModule],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.scss',
 })
