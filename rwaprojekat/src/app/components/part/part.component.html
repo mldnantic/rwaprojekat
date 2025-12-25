@@ -1,17 +1,13 @@
 @if(part)
 {
-<mat-card appearance="outlined" class="part">
-    <mat-card-header>
-        <mat-card-title>{{part.name}}</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image src="{{part.image}}">
-    <mat-card-content>
-        <p>
-            {{part.category}} {{part.msrp}}$ view count: {{part.viewCount}}
-        </p>
-    </mat-card-content>
-    <mat-card-actions>
-        <button matButton (click)="clicked()">View part</button>
-    </mat-card-actions>
-</mat-card>
+<div class="part">
+    <img src="{{part.image}}">
+    <h2>
+        {{part.name}}
+    </h2>
+    <p>
+        {{part.category}} {{part.msrp}}$ view count: {{part.viewCount}}
+    </p>
+    <button matButton="filled" (click)="clicked()">View part</button>
+</div>
 }
