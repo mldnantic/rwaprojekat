@@ -1,13 +1,11 @@
-<div class="header">
-    <h1>PConfig</h1>
-    <nav mat-tab-nav-bar [tabPanel]="tabPanel">
-        <a mat-tab-link (click)="activeLink = links[0]" routerLink="">Home</a>
-        <a mat-tab-link (click)="activeLink = links[1]" routerLink="/signup">Sign up</a>
-    </nav>
-    <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
-    <!-- <button matButton="outlined" routerLink="">Home</button>
-    <button matButton="outlined" routerLink="/signup">Sign up</button> -->
-</div>
+<h1>PConfig</h1>
+<nav mat-tab-nav-bar [tabPanel]="tabPanel" animationDuration="0ms">
+    <a mat-tab-link (click)="activeLink = links[0]" [active]="activeLink == links[0]" routerLink="{{links[0]}}"> Home
+    </a>
+    <a mat-tab-link (click)="activeLink = links[1]" [active]="activeLink == links[1]" routerLink="{{links[1]}}"> Sign up
+    </a>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 <div class="app-root">
-    <router-outlet/>
+    <router-outlet />
 </div>
