@@ -1,7 +1,12 @@
 <div class="header">
     <h1>PConfig</h1>
-    <button matButton="outlined" routerLink="">Home</button>
-    <button matButton="outlined" routerLink="/signup">Sign up</button>
+    <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+        <a mat-tab-link (click)="activeLink = links[0]" routerLink="">Home</a>
+        <a mat-tab-link (click)="activeLink = links[1]" routerLink="/signup">Sign up</a>
+    </nav>
+    <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+    <!-- <button matButton="outlined" routerLink="">Home</button>
+    <button matButton="outlined" routerLink="/signup">Sign up</button> -->
 </div>
 <div class="app-root">
     <router-outlet/>
