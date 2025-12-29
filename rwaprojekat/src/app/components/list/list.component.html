@@ -3,6 +3,10 @@
 <mat-grid-list cols="5" rowHeight="1:8">
     <mat-grid-tile colspan="1">
         <div class="list">
+            <mat-form-field>
+                <mat-label>Search by name</mat-label>
+                <input matInput>
+            </mat-form-field>
             <mat-selection-list>
                 @for (cat of categories; track cat) {
                 <mat-list-option>{{cat}}</mat-list-option>
@@ -17,7 +21,7 @@
                 {
                 <mat-grid-tile>
                     <mat-card appearance="outlined" class="maxWidthHeight">
-                        <part [part]=p></part>
+                        <part [part]=p class="maxWidthHeight"></part>
                     </mat-card>
                 </mat-grid-tile>
                 }

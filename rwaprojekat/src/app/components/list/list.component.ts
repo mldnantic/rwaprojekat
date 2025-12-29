@@ -11,10 +11,11 @@ import { selectPartList } from '../../store/part.selector';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import { MatCardModule } from "@angular/material/card";
+import { MatInputModule } from "@angular/material/input";
 
 @Component({
   selector: 'list',
-  imports: [AsyncPipe, PartComponent, MatGridListModule, MatListModule, MatCardModule],
+  imports: [AsyncPipe, PartComponent, MatGridListModule, MatListModule, MatCardModule, MatInputModule],
   providers:[PartsService, Store],
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss',
