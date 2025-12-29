@@ -1,13 +1,22 @@
 @if(part$ | async; as parts)
 {
-<div class="list">
-    <mat-grid-list cols="3" rowHeight="4:3">
+<mat-grid-list cols="5" rowHeight="1:4">
+    <mat-grid-tile colspan="1">
+        <mat-selection-list #shoes>
+            @for (shoe of typesOfShoes; track shoe) {
+            <mat-list-option>{{shoe}}</mat-list-option>
+            }
+        </mat-selection-list>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="4">
         @for(p of parts; track p.id)
         {
-        <mat-grid-tile>
-            <part [part]=p></part>
-        </mat-grid-tile>
+        <mat-card appearance="outlined">
+            <div class="list">
+                <part [part]=p></part>
+            </div>
+        </mat-card>
         }
-    </mat-grid-list>
-</div>
+    </mat-grid-tile>
+</mat-grid-list>
 }

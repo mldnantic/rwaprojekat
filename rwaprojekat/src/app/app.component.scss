@@ -1,21 +1,25 @@
-.app-root{
-    margin:20px;
+.app-root {
+    margin: 20px;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header nav{
+.header nav {
     flex: 1;
 }
 
-h1{
+.logo{
+    background-color: lightgray;
+}
+
+h1 {
   font-size: 400%;
   font-weight: bold;
-  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  background: linear-gradient(90deg, #FF4C4C, #DD0031, #7A001C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
