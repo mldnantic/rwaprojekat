@@ -25,7 +25,7 @@ export class ListComponent implements OnInit {
 
   constructor(private store: Store<AppState>) { }
 
-  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+  categories: string[] = ['CPU', 'GPU', 'Motherboards', 'Cases'];
 
   ngOnInit(): void {
     this.store.dispatch(loadParts());

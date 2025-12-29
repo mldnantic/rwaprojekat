@@ -1,32 +1,18 @@
 @if(part$ | async; as parts)
 {
-<mat-grid-list cols="5" rowHeight="1:4">
+<mat-grid-list cols="5" rowHeight="1:8">
     <mat-grid-tile colspan="1">
         <div class="list">
-            <mat-selection-list #shoes>
-                @for (shoe of typesOfShoes; track shoe) {
-                <mat-list-option>{{shoe}}</mat-list-option>
+            <mat-selection-list>
+                @for (cat of categories; track cat) {
+                <mat-list-option>{{cat}}</mat-list-option>
                 }
             </mat-selection-list>
         </div>
     </mat-grid-tile>
     <mat-grid-tile colspan="4">
-        <!-- <div class="list">
-            @for(p of parts; track p.id)
-            {
-            <mat-card appearance="outlined">
-                    <part [part]=p></part>
-            </mat-card>
-            }
-        </div> -->
-
         <div class="maxWidthHeight">
-            <!-- Nested Grid List -->
-            <mat-grid-list cols="3" rowHeight="2:1">
-                <!-- <mat-grid-tile style="background: lightblue;">Tile 1 (Nested)</mat-grid-tile>
-                <mat-grid-tile style="background: lightgreen;">Tile 2 (Nested)</mat-grid-tile>
-                <mat-grid-tile style="background: lightcoral;">Tile 3 (Nested)</mat-grid-tile>
-                <mat-grid-tile style="background: lightgoldenrodyellow;">Tile 4 (Nested)</mat-grid-tile> -->
+            <mat-grid-list cols="4">
                 @for(p of parts; track p.id)
                 {
                 <mat-grid-tile>
