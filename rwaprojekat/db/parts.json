@@ -17,22 +17,6 @@
       "image": "images/amd.png"
     },
     {
-      "id": 4,
-      "name": "Intel Xeon Platinum 8490H",
-      "category": "CPU",
-      "msrp": 17000,
-      "viewCount": 0,
-      "image": "images/intel.png"
-    },
-    {
-      "id": 5,
-      "name": "AMD EPYC 9654",
-      "category": "CPU",
-      "msrp": 11500,
-      "viewCount": 0,
-      "image": "images/amd.png"
-    },
-    {
       "id": 6,
       "name": "Intel Core i7-13700K",
       "category": "CPU",
@@ -89,14 +73,6 @@
       "image": "images/intel.png"
     },
     {
-      "id": 14,
-      "name": "NVIDIA H100 Tensor Core",
-      "category": "GPU",
-      "msrp": 30000,
-      "viewCount": 0,
-      "image": "images/nvidia.png"
-    },
-    {
       "id": 16,
       "name": "NVIDIA GeForce RTX 4080",
       "category": "GPU",
@@ -111,14 +87,6 @@
       "msrp": 499,
       "viewCount": 0,
       "image": "images/amd.png"
-    },
-    {
-      "id": 18,
-      "name": "NVIDIA A100",
-      "category": "GPU",
-      "msrp": 25000,
-      "viewCount": 0,
-      "image": "images/nvidia.png"
     },
     {
       "id": 19,
