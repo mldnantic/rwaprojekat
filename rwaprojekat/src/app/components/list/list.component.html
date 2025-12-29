@@ -9,14 +9,14 @@
         </mat-selection-list>
     </mat-grid-tile>
     <mat-grid-tile colspan="4">
-        @for(p of parts; track p.id)
-        {
-        <mat-card appearance="outlined">
-            <div class="list">
-                <part [part]=p></part>
-            </div>
-        </mat-card>
-        }
+        <div class="list">
+            @for(p of parts; track p.id)
+            {
+            <mat-card appearance="outlined">
+                    <part [part]=p></part>
+            </mat-card>
+            }
+        </div>
     </mat-grid-tile>
 </mat-grid-list>
 }

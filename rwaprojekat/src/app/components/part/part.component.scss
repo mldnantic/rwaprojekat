@@ -3,6 +3,12 @@
     border-radius: 10px;
     font-weight: 500;
     align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    margin:5px;
+    padding: 5px;
+    border-radius:5px;
+    height: fit-content;
 }
 
 img{

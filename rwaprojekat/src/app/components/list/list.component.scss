@@ -3,7 +3,11 @@ mat-grid-tile {
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
+    display: flex;
+    flex-flow:row wrap;
+    flex:2.5 0;
+    justify-content:flex-start;
+    padding: 5px;
+    margin: 5px;
+    border-radius:5px;
 }
