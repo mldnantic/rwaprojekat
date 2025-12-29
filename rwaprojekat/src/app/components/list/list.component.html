@@ -1,6 +1,6 @@
 @if(part$ | async; as parts)
 {
-<mat-grid-list cols="5" rowHeight="1:8">
+<mat-grid-list cols="5" rowHeight="1:2">
     <mat-grid-tile colspan="1">
         <div class="list">
             <mat-form-field>
@@ -14,7 +14,7 @@
             </mat-selection-list>
         </div>
     </mat-grid-tile>
-    <mat-grid-tile colspan="4">
+    <mat-grid-tile colspan="4" class="skrol">
         <div class="maxWidthHeight">
             <mat-grid-list cols="4">
                 @for(p of parts; track p.id)
