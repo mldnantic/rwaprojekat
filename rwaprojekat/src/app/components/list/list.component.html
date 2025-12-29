@@ -2,20 +2,32 @@
 {
 <mat-grid-list cols="5" rowHeight="1:4">
     <mat-grid-tile colspan="1">
-        <mat-selection-list #shoes>
-            @for (shoe of typesOfShoes; track shoe) {
-            <mat-list-option>{{shoe}}</mat-list-option>
-            }
-        </mat-selection-list>
+        <div class="list">
+            <mat-selection-list #shoes>
+                @for (shoe of typesOfShoes; track shoe) {
+                <mat-list-option>{{shoe}}</mat-list-option>
+                }
+            </mat-selection-list>
+        </div>
     </mat-grid-tile>
     <mat-grid-tile colspan="4">
-        <div class="list">
+        <!-- <div class="list">
             @for(p of parts; track p.id)
             {
             <mat-card appearance="outlined">
                     <part [part]=p></part>
             </mat-card>
             }
+        </div> -->
+
+        <div class="internal-grid-container">
+            <!-- Nested Grid List -->
+            <mat-grid-list cols="2" rowHeight="100px">
+                <mat-grid-tile style="background: lightblue;">Tile 1 (Nested)</mat-grid-tile>
+                <mat-grid-tile style="background: lightgreen;">Tile 2 (Nested)</mat-grid-tile>
+                <mat-grid-tile style="background: lightcoral;">Tile 3 (Nested)</mat-grid-tile>
+                <mat-grid-tile style="background: lightgoldenrodyellow;">Tile 4 (Nested)</mat-grid-tile>
+            </mat-grid-list>
         </div>
     </mat-grid-tile>
 </mat-grid-list>
