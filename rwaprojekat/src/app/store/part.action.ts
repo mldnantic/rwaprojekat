@@ -3,6 +3,11 @@ import { Part } from "../models/part";
 
 export const loadParts = createAction('Load Parts');
 
+export const loadPart = createAction(
+    'Load a Part',
+    props<{ partId: string }>()
+);
+
 export const loadPartsSuccess = createAction(
     'Load Parts Success',
     props<{ parts: Part[] }>()
@@ -15,13 +20,6 @@ export const selectPart = createAction(
 
 export const viewPart = createAction(
     'View part',
-    props<{ 
-        part: Part
-    }>()
-);
-
-export const viewPartSuccess = createAction(
-    'View part Success',
     props<{
         part: Part
     }>()

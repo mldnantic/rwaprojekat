@@ -1,7 +1,7 @@
 import { inject, Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { PartsService } from "../services/parts.service";
-import { loadParts, loadPartsSuccess, viewPart, viewPartSuccess } from "./part.action";
+import { loadParts, loadPartsSuccess, viewPart } from "./part.action";
 import { catchError, map, mergeMap, of } from "rxjs";
 
 @Injectable({
@@ -28,11 +28,12 @@ export class PartsEffects {
         this.action$.pipe(
             ofType(viewPart),
             mergeMap(action => {
-                const incrementedPart = {
+                const updatedPart = {
                     ...action.part,
                     viewCount: (action.part.viewCount ?? 0) + 1
                 };
-                return this.partsService.viewPart(incrementedPart).pipe(
+
+                return this.partsService.viewPart(updatedPart).pipe(
                     catchError(() => of({type: 'view part error'}))
                 );
             })

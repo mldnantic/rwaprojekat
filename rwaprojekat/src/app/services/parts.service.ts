@@ -15,9 +15,12 @@ export class PartsService {
     return this.httpClient.get<Part[]>(environment.APIURL + "/parts");
   }
 
-  viewPart(part: Part): Observable<Part>
-  {
+  viewPart(part: Part): Observable<Part> {
     return this.httpClient.put<Part>(environment.APIURL + "/parts/" + part.id, part);
+  }
+
+  getPart(partId: string): Observable<Part> {
+    return this.httpClient.get<Part>(environment.APIURL + "/parts/" + partId);
   }
 
 }
