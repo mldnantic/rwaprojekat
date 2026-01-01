@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { Part } from '../../models/part';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PartsService } from '../../services/parts.service';
 import { Observable, of } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'partview',
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, MatCardModule, MatButtonModule],
   templateUrl: './partview.component.html',
   styleUrl: './partview.component.scss',
 })
@@ -18,6 +20,7 @@ export class PartViewComponent {
 
   constructor(private route: ActivatedRoute,
     // private store: Store<AppState>,
+    private router: Router,
     private servis: PartsService) { }
 
   ngOnInit(): void {
@@ -30,5 +33,10 @@ export class PartViewComponent {
     //     partId: this.partId
     //   })
     // );
+  }
+
+  goBack()
+  {
+      this.router.navigate(['']);
   }
 }

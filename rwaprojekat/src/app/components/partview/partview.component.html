@@ -1,4 +1,16 @@
 @if(part$ | async; as part)
 {
-    {{part.name}} {{part.msrp}} {{part.id}}
+<mat-card appearance="outlined">
+    <img src="{{part.image}}">
+    <h1>
+        {{part.name}}
+    </h1>
+    <h1>
+        {{part.msrp}}$
+    </h1>
+    <h1>
+        View count {{part.viewCount}}
+    </h1>
+    <button matButton="filled" (click)="goBack()">Back</button>
+</mat-card>
 }
