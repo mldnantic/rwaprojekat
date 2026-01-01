@@ -27,12 +27,18 @@ export class PartsEffects {
     viewPart$ = createEffect(() =>
         this.action$.pipe(
             ofType(viewPart),
-            mergeMap(action =>
-                this.partsService.viewPart(action.part).pipe(
-                    map(updatedPart => viewPartSuccess({part: updatedPart})),
+            mergeMap(action => {
+                const incrementedPart = {
+                    ...action.part,
+                    viewCount: (action.part.viewCount ?? 0) + 1
+                };
+                return this.partsService.viewPart(incrementedPart).pipe(
                     catchError(() => of({type: 'view part error'}))
-                )
-            )
-        )
+                );
+            })
+        ),
+        {
+            dispatch: false
+        }
     );
 }
